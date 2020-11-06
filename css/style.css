@@ -1,0 +1,102 @@
+.btn {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 2px;
+  background-color: black;
+  border: 1px solid red;
+  background: -webkit-gradient(linear, right top, left top, from(#404b52), to(#4d5f64));
+  background: -o-linear-gradient(right, #404b52, #4d5f64);
+  background: linear-gradient(270deg, #404b52, #4d5f64);
+  border-top: 1px solid #8899a1;
+  border-right: 10px solid #495055;
+  border-bottom: 10px solid #1c1c1e;
+  border-left: 10px solid #2f3f41;
+  padding: 5px;
+}
+
+.btn--ver {
+  height: 144px;
+}
+
+.btn--hor {
+  width: 144px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.btn#num-5::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-top: 1px solid #69767a;
+  border-right: 1px solid #69767a;
+  background: #333d40;
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.93);
+      -ms-transform: scale(0.93);
+          transform: scale(0.93);
+  border-right-color: #3d4347;
+  background: -webkit-gradient(linear, right top, left top, from(#3e484f), to(#4b5c61));
+  background: -o-linear-gradient(right, #3e484f, #4b5c61);
+  background: linear-gradient(270deg, #3e484f, #4b5c61);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table {
+  background: url("../img/wood.jpg") repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 5%;
+}
+
+.keyboard {
+  width: 1800px;
+  height: 480.24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #727676;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.numpad {
+  background-color: #120d0b;
+  padding: 1px;
+}
