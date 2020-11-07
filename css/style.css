@@ -1,6 +1,5 @@
 .btn {
   position: relative;
-  width: 70px;
   height: 70px;
   margin: 2px;
   background-color: black;
@@ -15,6 +14,16 @@
   padding: 5px;
 }
 
+.btn-std-w {
+  width: 70px;
+}
+
+.btn-w-max {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .btn--ver {
   height: 144px;
 }
@@ -23,6 +32,34 @@
   width: 144px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.btn--hor-200 {
+  width: 144px;
+}
+
+.btn--hor-125 {
+  width: 90px;
+}
+
+.btn--hor-150 {
+  width: 108px;
+}
+
+.btn--hor-175 {
+  width: 126px;
+}
+
+.btn--hor-225 {
+  width: 162px;
+}
+
+.btn--hor-275 {
+  width: 198px;
+}
+
+.btn--half-h {
+  height: 36px;
 }
 
 .btn#num-5::after {
@@ -63,6 +100,12 @@
   display: flex;
 }
 
+.row-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .table {
   background: url("../img/wood.jpg") repeat;
   height: 100vh;
@@ -96,7 +139,21 @@
   padding: 20px;
 }
 
-.numpad {
+.keyboard-section {
   background-color: #120d0b;
   padding: 1px;
+}
+
+.middle-section {
+  margin-right: 36px;
+}
+
+.middle-section-lights {
+  height: 72px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.keys {
+  margin-right: 36px;
 }
